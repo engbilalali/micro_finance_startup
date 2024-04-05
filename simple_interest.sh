@@ -1,26 +1,22 @@
-# Simple Interest Calculator
-
-# Function to calculate simple interest
-def calculate_simple_interest(principal, rate, time):
-    """
-    Calculate simple interest using the formula: 
-    Simple Interest = (Principal * Rate * Time) / 100
-    """
-    interest = (principal * rate * time) / 100
-    return interest
-
-# Main function
-def main():
-    # Input principal amount, rate of interest, and time period from the user
-    principal = float(input("Enter the principal amount: "))
-    rate = float(input("Enter the rate of interest (in percentage): "))
-    time = float(input("Enter the time period (in years): "))
-
-    # Calculate simple interest
-    interest = calculate_simple_interest(principal, rate, time)
-
-    # Display the calculated interest
-    print("Simple Interest:", interest)
-
-if __name__ == "__main__":
-    main()
+#!/bin/bash
+   # This script calculates simple interest given principal,
+   # annual rate of interest and time period in years.
+   # Do not use this in production. Sample purpose only.
+   # Author: Upkar Lidder (IBM)
+   # Additional Authors:
+   # <your GitHub username>
+   # Input:
+   # p, principal amount
+   # t, time period in years
+   # r, annual rate of interest
+   # Output:
+   # simple interest = p*t*r
+   echo "Enter the principal:"
+   read p
+   echo "Enter rate of interest per year:"
+   read r
+   echo "Enter time period in years:"
+   read t
+   s=`expr $p \* $t \* $r / 100`
+   echo "The simple interest is: "
+   echo $s
